@@ -43,8 +43,8 @@ const options = {
     apis: ["./src/route/swagger.js"],
 };
 
-if (process.env.HEROKU_APP_NAME) {
-    options.definition.servers.unshift({ url: `https://${process.env.HEROKU_APP_NAME}.herokuapp.com`, description: "Deployed server" })
+if (process.env.DEPLOY_APP_URL) {
+    options.definition.servers.unshift({ url: process.env.DEPLOY_APP_URL, description: "Deployed server" })
 }
 
 const app = express();
