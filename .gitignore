@@ -1,5 +1,6 @@
 .vscode/
-uploads/
+uploads/*
+!uploads/.gitkeep
 
 # Logs
 logs
