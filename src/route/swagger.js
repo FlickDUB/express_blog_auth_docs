@@ -11,9 +11,11 @@
  *         username:
  *           type: string
  *           description: User login
+ *           example: test
  *         password:
  *           type: string
  *           description: User password
+ *           example: admin123
  *     UserInfo:
  *       type: object
  *       properties:

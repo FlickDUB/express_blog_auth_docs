@@ -51,6 +51,7 @@ const app = express();
 
 
 app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerJsDoc(options)));
+app.use('/uploads', express.static('uploads'))
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(compression())
